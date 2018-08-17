@@ -5,16 +5,6 @@ import pandas
 import os
 import folium
 
-def write_to_file(filename, state_informations):
-    """
-    Writes to a specified csv file
-    """
-    with open(filename, 'a') as fopen:
-        for key in state_informations:
-            fopen.write(state_informations[key]['address'] + ' | ' +
-                        state_informations[key]['city'] + ' | ' + state_informations[key]['state'] + "\n")
-
-
 def clear_csv_file(filename):
     """
     Removes csv file
