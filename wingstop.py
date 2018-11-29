@@ -1,9 +1,7 @@
 from bs4 import BeautifulSoup
 import requests
-import numpy
 import pandas
 import os
-import folium
 
 def clear_csv_file(filename):
     """
