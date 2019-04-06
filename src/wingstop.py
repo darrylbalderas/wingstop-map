@@ -88,7 +88,7 @@ def main():
         state_information = get_location_list(location_url, state_name)
         df = pandas.concat([df, create_list_of_locations(state_information)])
     print('Finish with get coordinates')
-    df.to_csv('coordinates.csv', index=False)
+    df.to_csv('../coordinates.csv', index=False)
 
 
 if __name__ == "__main__":
